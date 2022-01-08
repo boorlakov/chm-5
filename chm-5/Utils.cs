@@ -32,16 +32,4 @@ public static class Utils
             .Select(double.Parse)
             .ToArray();
     }
-
-    public static void Pprint(double[] vector)
-    {
-        Console.WriteLine("\nVector pprint:");
-
-        foreach (var item in vector)
-        {
-            Console.Write("{0:G15}\n", item);
-        }
-
-        Console.WriteLine();
-    }
 }

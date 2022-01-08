@@ -34,13 +34,13 @@ public static class GeneralOperations
     public static double Norm(double[] x) => Math.Sqrt(x.Sum(t => t * t));
 
     /// <summary>
-    /// Finds minimal and maximum eigen values in given matrix
+    /// Finds minimal and maximum absolute eigen values in given matrix
     /// </summary>
     /// <param name="matrix">where eigen values is founded</param>
     /// <param name="initApprox">initial approximation</param>
     /// <param name="maxIter">maximum number of iterations</param>
     /// <param name="eps">Wanted accuracy</param>
-    /// <returns>minimal and maximum eigen values</returns>
+    /// <returns>minimal and maximum eigen absolute values</returns>
     public static (double, double) FindEigenAbsValues(
         double[,] matrix,
         double[] initApprox,
@@ -58,7 +58,7 @@ public static class GeneralOperations
     /// <param name="initApprox">initial approximation</param>
     /// <param name="maxIter">maximum number of iterations</param>
     /// <param name="eps">Wanted accuracy</param>
-    /// <returns>minimal eigen value</returns>
+    /// <returns>minimal absolute eigen value</returns>
     public static double FindMinEigenValue(
         double[,] matrix,
         double[] initApprox,
@@ -101,7 +101,7 @@ public static class GeneralOperations
     /// <param name="initApprox">initial approximation</param>
     /// <param name="maxIter">maximum number of iterations</param>
     /// <param name="eps">Wanted accuracy</param>
-    /// <returns>maximum eigen values</returns>
+    /// <returns>maximum eigen absolute  values</returns>
     public static double FindMaxEigenValue(
         double[,] matrix,
         double[] initApprox,

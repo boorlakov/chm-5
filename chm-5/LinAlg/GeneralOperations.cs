@@ -12,7 +12,7 @@ public static class GeneralOperations
     /// <summary>
     /// Finds minimal and maximum eigen values in given matrix
     /// </summary>
-    /// <param name="matrix">Where eigen values is founded</param>
+    /// <param name="matrix">where eigen values is founded</param>
     /// <param name="initApprox">initial approximation</param>
     /// <returns>minimal and maximum eigen values</returns>
     public static (double minEigenValue, double maxEigenValue) FindEigenValues(double[,] matrix, double[] initApprox)
@@ -21,22 +21,22 @@ public static class GeneralOperations
     }
 
     /// <summary>
-    /// Finds minimal and maximum eigen values in given matrix
+    /// Finds minimal eigen value in given matrix
     /// </summary>
-    /// <param name="matrix">Where eigen values is founded</param>
+    /// <param name="matrix">where eigen value is founded</param>
     /// <param name="initApprox">initial approximation</param>
-    /// <returns>minimal and maximum eigen values</returns>
+    /// <returns>minimal eigen value</returns>
     public static double FindMinEigenValue(double[,] matrix, double[] initApprox)
     {
 
     }
 
     /// <summary>
-    /// Finds minimal and maximum eigen values in given matrix
+    /// Finds maximum eigen values in given matrix
     /// </summary>
-    /// <param name="matrix">Where eigen values is founded</param>
+    /// <param name="matrix">where eigen values is founded</param>
     /// <param name="initApprox">initial approximation</param>
-    /// <returns>minimal and maximum eigen values</returns>
+    /// <returns>maximum eigen values</returns>
     public static double FindMaxEigenValue(double[,] matrix, double[] initApprox)
     {
 

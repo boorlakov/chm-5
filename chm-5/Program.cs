@@ -10,7 +10,14 @@ internal static class Program
         var inputParameters = JsonSerializer.Deserialize<JsonData>(content);
         var matrix = Utils.MatrixFromFile("matrix.txt", inputParameters!.InitApprox.Length);
 
-        var bim = 0;
+        var (minEigenAbsValue, maxEigenAbsValue) = LinAlg.GeneralOperations.FindEigenAbsValues(
+            matrix, 
+            inputParameters!.InitApprox,
+            inputParameters.MaxIter,
+            inputParameters.Eps
+            );
+
+        Console.WriteLine($"Min = {minEigenAbsValue:G15}, Max = {maxEigenAbsValue:G15}");
     }
 }
 
